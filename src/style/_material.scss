@@ -1,0 +1,38 @@
+body{
+// .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+//     background: var(--white);
+// }
+
+//form Input Fields
+--mdc-filled-text-field-container-color : transparent;
+//button color
+--mdc-protected-button-container-color : var(--primary);
+// .mat-form-field:hover .mat-mdc-form-field-label {
+//     color: #ff9800; /* Change hover label color */
+//   }
+//   .mat-mdc-raised-button .mat-mdc-button-touch-target{
+//     background-color: var(--primary);
+//     border-radius: 35px;
+//     color: var(--white);
+//   }
+
+  // .mat-mdc-raised-button:not(:disabled){
+  //   background-color: var(primary);
+  //   color: var(--white);
+  // }
+  .primary-btn{
+    --mdc-protected-button-label-text-color: var(--white);
+    --mdc-protected-button-container-color: var(--primary);
+    &.round{
+      --mdc-protected-button-container-shape: 25px;
+    }
+    &.large{
+      --mdc-protected-button-container-height: 50px;
+    }
+    &.small-height{
+        --mdc-protected-button-container-height: 30px;
+        --mat-protected-button-horizontal-padding: 8px;
+    }
+    min-width: max-content;
+  }
+}
